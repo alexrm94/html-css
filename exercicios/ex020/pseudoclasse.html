@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+
+        div>p{
+            display: inline-block;
+        }
+
+        div:hover{
+            background-color: blue;
+            
+        }
+        .especial::before{
+            content:"Olhar pra direita";
+           color: greenyellow;
+           
+        }
+
+        .especial:hover{
+        color: blue;
+}
+
+        a:active{
+            color: blueviolet;
+            font-size: 3em;
+        }
+        h1{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Aprendendo pseudoclasses</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span class="especial"> Error totam</span>, quia sed fugiat eaque culpa espacial  sadasda  tenetur ut voluptate sunt maiores consequuntur enim corporis possimus, aut laudantium. Est inventore tenetur laborum.</p>
+        <li><a href="https://www.google.com.br" class="especial"></a></li>
+    <li><a href="https://www.google.com" target="_blank">Repositorio Github</a></li>
+</body>
+</html>

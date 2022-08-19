@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body {
+    width: 400px;
+   
+    
+    border: 3px solid transparent;
+    
+    border-image: linear-gradient(to right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+    
+    border-image-slice: 1;
+    
+    padding: 25px;
+    
+    }

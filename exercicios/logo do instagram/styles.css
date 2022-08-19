@@ -1,0 +1,73 @@
+/* RESET */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --yellow: #F9DC64;
+    --orange: #FF553E;
+    --purple: #B5008E;
+   
+    --blue: #3023AE;
+    --blue-alpha: #3023AE1f;
+  }
+  
+  body{
+    display: flex; /* sem isso o logo gruda nas laterais esquerda e direita */
+    justify-content: center; /* alinhamento esquerda direita */
+    align-items: center; /* alinhamento cima baixo */
+    height: 100vh; /* desce a imagem pra ficar no centro */
+    overflow: hidden; /* não sei o que faz */
+  }
+  
+  .container{
+    width: 486px;
+    height: 486px;
+    border-radius: 35%; /* tira a borda */
+    background-image: radial-gradient(circle at bottom left, var(--yellow), var(--orange), var(--purple));
+    position: fixed;
+  }
+  .container::before{
+    content: "";
+    position: absolute;
+    background-image: radial-gradient(circle at top left, var(--blue), var(--blue-alpha), transparent);
+    width: 486px;
+    height: 486px;
+    border-radius: 35%;
+  }
+  span{ /* primeira parte branca quadrada */
+    width: 340px;
+    height: 340px;
+    border: 30px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 35%;
+  }
+  
+  span::before, span::after{/* circulo e bolinha */
+    content: "";
+    position: absolute;
+  }
+  
+  span::before{ /* circulo */
+    width: 220px;
+    height: 220px;
+    border: 30px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  span::after{/* bolinha */
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    right: 28px;
+    top: 25px;
+  }
